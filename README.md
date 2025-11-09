@@ -47,3 +47,4 @@ https://ai.google.dev/gemini-api/docs?hl=ja
 ## 参考
 - https://fly.io/blog/everyone-write-an-agent/
 - https://github.com/google-gemini/cookbook
+- [APIの料金](https://ai.google.dev/gemini-api/docs/pricing?hl=ja&_gl=1*19lnu2m*_up*MQ..*_ga*MTY4MzY3MTI4NC4xNzYyNzAyNjE4*_ga_P1DBVKWT6V*czE3NjI3MDI2MTckbzEkZzAkdDE3NjI3MDI2MTckajYwJGwwJGgxNzQyMjY4NzA.)
