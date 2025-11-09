@@ -21,7 +21,33 @@ def main():
     client = configure_api()
     spinner = Halo(text='Thinking...', spinner='dots')
     # AIモデルを指定
-    chat = client.chats.create(model="gemini-2.0-flash", history=[])
+    history=[
+        {
+            "role":"user",
+            "parts":[
+                {
+                    "text": "あなたの名前はAです"
+                }
+            ]
+        },
+        {
+            "role":"model",
+            "parts":[
+                {
+                    "text": "はい，私の名前はAです"
+                }
+            ]
+        },
+        {
+            "role":"user",
+            "parts":[
+                {
+                    "text": "私は来年の４月からWEBエンジニアとして働く予定です"
+                }
+            ]
+        }
+    ]
+    chat = client.chats.create(model="gemini-2.0-flash", history=history)
 
     while True:
         try:

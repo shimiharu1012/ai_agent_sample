@@ -7,6 +7,7 @@ https://ai.google.dev/gemini-api/docs?hl=ja
     - 残りtokenを表示する機能
     - 会話履歴を保存する
         - コンテキスト管理
+        - コンテキストの永続化
     - 会話履歴のファイルを複数持つ
 
 
@@ -48,3 +49,4 @@ https://ai.google.dev/gemini-api/docs?hl=ja
 - https://fly.io/blog/everyone-write-an-agent/
 - https://github.com/google-gemini/cookbook
 - [APIの料金](https://ai.google.dev/gemini-api/docs/pricing?hl=ja&_gl=1*19lnu2m*_up*MQ..*_ga*MTY4MzY3MTI4NC4xNzYyNzAyNjE4*_ga_P1DBVKWT6V*czE3NjI3MDI2MTckbzEkZzAkdDE3NjI3MDI2MTckajYwJGwwJGgxNzQyMjY4NzA.)
+- https://googleapis.github.io/python-genai/
