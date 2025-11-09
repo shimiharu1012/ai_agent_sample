@@ -4,6 +4,7 @@ from google import genai
 from dotenv import load_dotenv
 import os
 from InquirerPy import inquirer
+from halo import Halo
 
 load_dotenv()
 
@@ -11,9 +12,8 @@ client = genai.Client(api_key=os.getenv("GEMINI_API_KEY"))
 
 model_choices=[
     {"name": "gemini-2.5-flash", "value": "gemini-2.5-flash"},
-    {"name": "gemini-2.5-flash-image", "value": "gemini-2.5-flash-image"},
-    {"name": "imagen-4.0-generate-001", "value": "imagen-4.0-generate-001"},
-    {"name": "gemini-2.5-pro-exp-01-21", "value": "gemini-2.5-pro-exp-01-21"}
+    {"name": "gemini-2.5-flash-lite", "value": "gemini-2.5-flash-lite"},
+    {"name": "gemini-2.5-pro", "value": "gemini-2.5-pro"}
 ]
 model = inquirer.select(
     message="選択してください:",
@@ -23,14 +23,16 @@ model = inquirer.select(
     instruction="↑↓で移動、Enterで確定",
 ).execute()
 
-print(model)
+spinner = Halo(text='Thinking...', spinner='dots')
 
 while True:
     request=input("Enter your prompt:")
+    spinner.start()
     response = client.models.generate_content(
         model=model,
         contents=request
     )
+    spinner.stop()
     print(response.text)
     print('-'*20)
     print(
