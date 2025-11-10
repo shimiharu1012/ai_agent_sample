@@ -3,6 +3,8 @@
 https://ai.google.dev/gemini-api/docs?hl=ja
 
 
+<video src="chat-demo.mov"></video>
+
 ## やりたいこと
 - 残りtokenを表示する機能
 - コンテキストキャッシュで色々遊ぶ
