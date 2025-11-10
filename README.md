@@ -1,14 +1,25 @@
-GEMINI APIで遊ぶよう
+## CLI AI Agent (Python & Gemini)
 
 https://ai.google.dev/gemini-api/docs?hl=ja
 
+
 ## やりたいこと
-- AI Agent作ってみる
-    - 残りtokenを表示する機能
-    - 会話履歴を保存する
-        - コンテキスト管理
-        - コンテキストの永続化
-    - 会話履歴のファイルを複数持つ
+- 残りtokenを表示する機能
+- コンテキストキャッシュで色々遊ぶ
+- chat.pyの中に
+    - 画像認識
+    - 画像生成
+
+
+
+## やったこと
+- 会話履歴の保存
+    - コンテキスト管理
+    - コンテキストの永続化
+        - 暗黙的な永続化:chatが生きている間は自動で
+        - 明示的な永続化：chat離脱後もSQLiteでコンテキストを保持
+            
+
 
 
 ## response.json
