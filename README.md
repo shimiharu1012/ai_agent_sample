@@ -2,8 +2,7 @@
 
 https://ai.google.dev/gemini-api/docs?hl=ja
 
-
-[動画デモ](chat-demo.mov)
+![動画](https://github.com/shimiharu1012/ai_agent_sample/edit/main/chat-demo.mov)
 
 ## やりたいこと
 - 残りtokenを表示する機能
