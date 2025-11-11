@@ -1,3 +1,4 @@
 .env
 sample_images/
 db/
+__pycache__/

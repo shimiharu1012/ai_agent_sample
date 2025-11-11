@@ -11,6 +11,9 @@ https://ai.google.dev/gemini-api/docs?hl=ja
     - 画像認識
     - 画像生成
 - tavily（LLM向け検索用API）で高度なWEB検索
+    - なんちゃってDeepリサーチ
+    - 検索モードの場合，間にプロンプトを挟んでLLMによる検索キーワード抽出
+    - 検索キーワードでtavily検索→Chat回答に仕様
 
 
 
