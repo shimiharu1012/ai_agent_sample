@@ -15,6 +15,8 @@ https://ai.google.dev/gemini-api/docs?hl=ja
     - 検索モードの場合，間にプロンプトを挟んでLLMによる検索キーワード抽出
     - 検索キーワードでtavily検索→Chat回答に仕様
 
+- 安定性がない
+    - ``` 429 RESOURCE_EXHAUSTED. {'error': {'code': 429, 'message': 'Resource exhausted. Please try again later. Please refer to https://cloud.google.com/vertex-ai/generative-ai/docs/error-code-429 for more details.', 'status': 'RESOURCE_EXHAUSTED'}}``` が頻発
 
 
 ## やったこと
