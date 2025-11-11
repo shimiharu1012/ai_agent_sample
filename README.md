@@ -10,6 +10,7 @@ https://ai.google.dev/gemini-api/docs?hl=ja
 - chat.pyの中に
     - 画像認識
     - 画像生成
+- tavily（LLM向け検索用API）で高度なWEB検索
 
 
 
