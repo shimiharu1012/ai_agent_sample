@@ -50,6 +50,7 @@ def main():
             {"name": db_file.rstrip(".json"), "value": db_file} for db_file in db_files
         ]
         db_choices.append({"name": "Create new database", "value": "new"})
+        db_choices.append({"name": "Exit", "value": "Exit"})
         
         filename=inquirer.select(
             message="Select the room:",
@@ -57,7 +58,10 @@ def main():
             default=db_choices[0],
             pointer="➤"
         ).execute()
-
+        
+        if filename=="Exit":
+            break
+        
         # TinyDBの接続
         db=open_database(filename)
         history=db.table('history').all()
